@@ -7,7 +7,7 @@ from collections import deque
 
 def maxDepth(root: TreeNode) -> int:
     # DFS
-    # Base Casae
+    # Base Case
     if not root:
         return 0
 
