@@ -1,7 +1,9 @@
-Progress tracker for leetcode problems.
+# LeetCode Problems
+This is my central knowledgebase for leetcode problems.\
+The problems are following the outline provided by https://neetcode.io/roadmap
 
-2024.3.11: 3 \
-2024.3.13: 2485 \
-2024.3.15: 238 \
-2024.3.16: 525 \
-2024.3.17: 57 \
+## Problems
+
+
+
+## Explanations and Key Points
