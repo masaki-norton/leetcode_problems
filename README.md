@@ -21,3 +21,11 @@ comparing the dictionaries.
 ### 1 Two Sum
 Create a "subtracted" array, much faster than double loop.\
 Check condition that return indices are not the same, and return.
+
+#### 49 Group Anagrams
+Simple step of instructions:
+1. Sort all words in list
+2. Create dictionary where {key, value} = {index in nums, sorted word} \
+and sort it by the values.
+3. Loop through dictionary. If the values are the same, create sublist of anagrams\
+to append to master output using dictionary keys. Repeat for all unique dictionary values.
