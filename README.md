@@ -4,10 +4,10 @@ The problems are following the outline provided by https://neetcode.io/roadmap
 
 ## Problems
 ### Arrays and Hashing
-1. 217 Contains Duplicate
-2. 242 Valid Anagram
-3. 1 Two Sum
-4. 49 Group Anagrams
+- 217 Contains Duplicate
+- 242 Valid Anagram
+- 1 Two Sum
+- 49 Group Anagrams
 
 
 ## Explanations and Key Points
