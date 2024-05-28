@@ -3,8 +3,16 @@ https://leetcode.com/problems/top-k-frequent-elements/description/
 '''
 
 def topKFrequent(nums: list[int], k: int) -> list[int]:
+    count = {}
+    for n in nums:
+        if n in count:
+            count[n] += 1
+        else:
+            count[n] = 1
 
-    return
+    sorted_count = list(dict(sorted(count.items(), key=lambda x: x[1], reverse=True)).keys())
+
+    return [sorted_count[x] for x in range(k)]
 
 # test cases
 nums1 = [1,1,1,2,2,3]

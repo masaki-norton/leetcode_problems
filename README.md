@@ -31,3 +31,9 @@ Simple step of instructions:
 and sort it by the values.
 3. Loop through dictionary. If the values are the same, create sublist of anagrams\
 to append to master output using dictionary keys. Repeat for all unique dictionary values.
+
+### 347 Top K Frequent Elements
+Simple step of instructions
+1. Create letter counter
+2. Sort counter dictionary based on values
+3. Return top K values as a list
