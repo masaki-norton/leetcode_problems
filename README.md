@@ -6,6 +6,8 @@ The problems are following the outline provided by https://neetcode.io/roadmap
 ### Arrays and Hashing
 1. 217 Contains Duplicate
 2. 242 Valid Anagram
+3. 1 Two Sum
+4. 49 Group Anagrams
 
 
 ## Explanations and Key Points
@@ -22,7 +24,7 @@ comparing the dictionaries.
 Create a "subtracted" array, much faster than double loop.\
 Check condition that return indices are not the same, and return.
 
-#### 49 Group Anagrams
+### 49 Group Anagrams
 Simple step of instructions:
 1. Sort all words in list
 2. Create dictionary where {key, value} = {index in nums, sorted word} \
