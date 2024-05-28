@@ -5,6 +5,7 @@ The problems are following the outline provided by https://neetcode.io/roadmap
 ## Problems
 ### Arrays and Hashing
 1. 217 Contains Duplicate
+2. 242 Valid Anagram
 
 
 ## Explanations and Key Points
