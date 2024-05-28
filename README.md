@@ -17,3 +17,7 @@ as a one liner comparing the lengths of the set and the original array.
 One-liner is sorting both strings and comparing if they are equial. \
 The other method is to create a dictionary of each letter occurrence and \
 comparing the dictionaries.
+
+### 1 Two Sum
+Create a "subtracted" array, much faster than double loop.\
+Check condition that return indices are not the same, and return.
