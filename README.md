@@ -8,6 +8,10 @@ The problems are following the outline provided by https://neetcode.io/roadmap
 - 242 Valid Anagram
 - 1 Two Sum
 - 49 Group Anagrams
+- 347 Top K Frequemt Elements
+
+### Other
+- 1404 Number of Steps to Reduce Binary Number to 1
 
 
 ## Explanations and Key Points
@@ -37,3 +41,8 @@ Simple step of instructions
 1. Create letter counter
 2. Sort counter dictionary based on values
 3. Return top K values as a list
+
+### 1404 Number of Steps to Reduce Binary Number to 1
+Adding binary was easier converting it to an integer and reversing.\
+Dividing by 2 in binary is simply shifting all digits over by 1, or \
+discarding the last digit.
