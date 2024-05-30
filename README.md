@@ -9,6 +9,7 @@ The problems are following the outline provided by https://neetcode.io/roadmap
 - 1 Two Sum
 - 49 Group Anagrams
 - 347 Top K Frequemt Elements
+- 238 Product of Array Except Self
 
 ### Other
 - 1404 Number of Steps to Reduce Binary Number to 1
@@ -41,6 +42,11 @@ Simple step of instructions
 1. Create letter counter
 2. Sort counter dictionary based on values
 3. Return top K values as a list
+
+### 238 Product of Array Except Self
+Each digit will be a product of both total products of its left and rigth side.\
+Create two lists, each denoting all products on left side of index, and same for \
+the right side. Multiply each list together to get the output.
 
 ### 1404 Number of Steps to Reduce Binary Number to 1
 Adding binary was easier converting it to an integer and reversing.\
