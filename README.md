@@ -10,6 +10,7 @@ The problems are following the outline provided by https://neetcode.io/roadmap
 - 49 Group Anagrams
 - 347 Top K Frequemt Elements
 - 238 Product of Array Except Self
+- 36 Valid Sudoku
 
 ### Other
 - 1404 Number of Steps to Reduce Binary Number to 1
@@ -47,6 +48,10 @@ Simple step of instructions
 Each digit will be a product of both total products of its left and rigth side.\
 Create two lists, each denoting all products on left side of index, and same for \
 the right side. Multiply each list together to get the output.
+
+### 36 Valid Sudoku
+Brute force approach checking row, column, and 3x3 grid. \
+Can possibly speed up by checking element-wise, potentially.
 
 ### 1404 Number of Steps to Reduce Binary Number to 1
 Adding binary was easier converting it to an integer and reversing.\
