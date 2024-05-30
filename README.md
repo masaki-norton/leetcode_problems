@@ -11,6 +11,8 @@ The problems are following the outline provided by https://neetcode.io/roadmap
 - 347 Top K Frequemt Elements
 - 238 Product of Array Except Self
 - 36 Valid Sudoku
+- 128 Longest Consecutive Sequence
+
 
 ### Other
 - 1404 Number of Steps to Reduce Binary Number to 1
