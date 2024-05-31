@@ -55,6 +55,18 @@ the right side. Multiply each list together to get the output.
 Brute force approach checking row, column, and 3x3 grid. \
 Can possibly speed up by checking element-wise, potentially.
 
+### 128 Longest Consecutive Sequence
+Needs to be done in O(n) time. Approach is to create a set (remove duplicates) \
+and for each number check if it is the start of a sequence, i.e., num-1 does not \
+exist in the set. If it is the start of a sequence, enter while loop to continue \
+checking if the next number is present.\
+Total passes are:
+- one pass to create set
+- another pass for outer for loop to check if each num is a sequence start
+- and lastly counting each sequence is at worst o(n) if we visit all numbers once\
+where there is no max sequence, and max sequence is 1.
+The total time complexity is O(3n) ish.
+
 ### 1404 Number of Steps to Reduce Binary Number to 1
 Adding binary was easier converting it to an integer and reversing.\
 Dividing by 2 in binary is simply shifting all digits over by 1, or \
