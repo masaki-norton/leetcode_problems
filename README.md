@@ -59,13 +59,22 @@ Can possibly speed up by checking element-wise, potentially.
 Needs to be done in O(n) time. Approach is to create a set (remove duplicates) \
 and for each number check if it is the start of a sequence, i.e., num-1 does not \
 exist in the set. If it is the start of a sequence, enter while loop to continue \
-checking if the next number is present.\
+checking if the next number is present. Note that sets can search in O(1) time, \
+creating the benefit here.
 Total passes are:
 - one pass to create set
 - another pass for outer for loop to check if each num is a sequence start
 - and lastly counting each sequence is at worst o(n) if we visit all numbers once\
 where there is no max sequence, and max sequence is 1.
-The total time complexity is O(3n) ish.
+The total time complexity is O(3n) ish.\
+
+Another method is to create a set, and for each number, go up and down to count \
+the sequence. This allows you to pop the number from the set, so it runs slightly \
+faster.
+
+### 125 Valid Palindrome
+Straight forward, just check from either side.\
+Dont forget the constraints - only alpha num and lower cases.
 
 ### 1404 Number of Steps to Reduce Binary Number to 1
 Adding binary was easier converting it to an integer and reversing.\
