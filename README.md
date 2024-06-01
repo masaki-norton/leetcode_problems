@@ -13,6 +13,12 @@ The problems are following the outline provided by https://neetcode.io/roadmap
 - 36 Valid Sudoku
 - 128 Longest Consecutive Sequence
 
+### Two Pointers
+- 167 Two Sum II
+Two pointers is one method to solve this problem.\
+Go from left to right, shifting either left or right inward depending on the \
+total sum compared to the target.\
+Note that hash map is most likely faster, but two pointer uses very little memory.
 
 ### Other
 - 1404 Number of Steps to Reduce Binary Number to 1
