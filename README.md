@@ -17,6 +17,7 @@ The problems are following the outline provided by https://neetcode.io/roadmap
 - 167 Two Sum II
 - 15 Three Sum
 - 11 Container With Most Water
+- 42 Trapping Rainwater
 
 ### Other
 - 1404 Number of Steps to Reduce Binary Number to 1
@@ -99,6 +100,8 @@ bar is lower, it will hold less water. Start with two pointers, left and right.\
 Go inwards calculating area as necessary. Move inwards depending on which next \
 bar is taller, and keep skipping over shorter next bars using while loops for \
 a fast solution.
+
+### 42 Trapping Rainwater
 
 ### 1404 Number of Steps to Reduce Binary Number to 1
 Adding binary was easier converting it to an integer and reversing.\
