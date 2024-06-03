@@ -94,7 +94,11 @@ The key was to recognize under which exact step would you want to perform the \
 "skip this number because its a repeat" step within the loop.
 
 ### 11 Container With Most Water
-
+Go from outside inwards. Logic here is that, in any given position, if the next \
+bar is lower, it will hold less water. Start with two pointers, left and right.\
+Go inwards calculating area as necessary. Move inwards depending on which next \
+bar is taller, and keep skipping over shorter next bars using while loops for \
+a fast solution.
 
 ### 1404 Number of Steps to Reduce Binary Number to 1
 Adding binary was easier converting it to an integer and reversing.\
