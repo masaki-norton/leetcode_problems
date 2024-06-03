@@ -16,6 +16,7 @@ The problems are following the outline provided by https://neetcode.io/roadmap
 ### Two Pointers
 - 167 Two Sum II
 - 15 Three Sum
+- 11 Container With Most Water
 
 ### Other
 - 1404 Number of Steps to Reduce Binary Number to 1
@@ -91,6 +92,9 @@ The tricky part about this was to not contain duplicates, so have to think \
 thru the logic step by step on how to handle when seeing duplicates.\
 The key was to recognize under which exact step would you want to perform the \
 "skip this number because its a repeat" step within the loop.
+
+### 11 Container With Most Water
+
 
 ### 1404 Number of Steps to Reduce Binary Number to 1
 Adding binary was easier converting it to an integer and reversing.\
