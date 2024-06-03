@@ -101,7 +101,20 @@ Go inwards calculating area as necessary. Move inwards depending on which next \
 bar is taller, and keep skipping over shorter next bars using while loops for \
 a fast solution.
 
-### 42 Trapping Rainwater
+### 42 Trapping Rainwater (hard)
+First approach was to go row by row. If there is blank space between blocks, \
+it will hold water. Although this approach works, it times out, especially \
+when the blocks are formatted in a way that is most time consuming with this \
+algorithm. Tried tweaking the algorithm to drop the maximum amount (not row \
+by row) however this did not give enough time savings.\
+Next approach was to try two pointers. Start at left and right. If both pointers\
+see a higher number (not just one, since a stick can't hold water), we \
+check how much that gain was by and add it to the total rainwater.\
+Another interesting method is to imagne sand being poured from the top, and \
+to create a second array that only slopes downwards as it goes out.\
+Given any arrangement of blocks, the shape is going to be "mound-like". \
+Once you have this "mound-array", you would simply subtract the differences to \
+see where blocks meet water, and therefore you have the total volume.
 
 ### 1404 Number of Steps to Reduce Binary Number to 1
 Adding binary was easier converting it to an integer and reversing.\
