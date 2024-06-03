@@ -15,10 +15,7 @@ The problems are following the outline provided by https://neetcode.io/roadmap
 
 ### Two Pointers
 - 167 Two Sum II
-Two pointers is one method to solve this problem.\
-Go from left to right, shifting either left or right inward depending on the \
-total sum compared to the target.\
-Note that hash map is most likely faster, but two pointer uses very little memory.
+- 15 Three Sum
 
 ### Other
 - 1404 Number of Steps to Reduce Binary Number to 1
@@ -81,6 +78,19 @@ faster.
 ### 125 Valid Palindrome
 Straight forward, just check from either side.\
 Dont forget the constraints - only alpha num and lower cases.
+
+### 167 Two Sum II
+Two pointers is one method to solve this problem.\
+Go from left to right, shifting either left or right inward depending on the \
+total sum compared to the target.\
+Note that hash map is most likely faster, but two pointer uses very little memory.
+
+### 15 Three Sum
+Two pointer two sum, but start at each number in the array and loop thru.\
+The tricky part about this was to not contain duplicates, so have to think \
+thru the logic step by step on how to handle when seeing duplicates.\
+The key was to recognize under which exact step would you want to perform the \
+"skip this number because its a repeat" step within the loop.
 
 ### 1404 Number of Steps to Reduce Binary Number to 1
 Adding binary was easier converting it to an integer and reversing.\
