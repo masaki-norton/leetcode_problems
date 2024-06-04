@@ -114,7 +114,8 @@ Another interesting method is to imagne sand being poured from the top, and \
 to create a second array that only slopes downwards as it goes out.\
 Given any arrangement of blocks, the shape is going to be "mound-like". \
 Once you have this "mound-array", you would simply subtract the differences to \
-see where blocks meet water, and therefore you have the total volume.
+see where blocks meet water, and therefore you have the total volume.\
+The above worked, but it was way too slow. Refactored code so it runs faster.\
 
 ### 1404 Number of Steps to Reduce Binary Number to 1
 Adding binary was easier converting it to an integer and reversing.\
