@@ -19,6 +19,9 @@ The problems are following the outline provided by https://neetcode.io/roadmap
 - 11 Container With Most Water
 - 42 Trapping Rainwater
 
+### Stack
+- 20 Valid Parenthesis
+
 ### Other
 - 1404 Number of Steps to Reduce Binary Number to 1
 
@@ -116,6 +119,9 @@ Given any arrangement of blocks, the shape is going to be "mound-like". \
 Once you have this "mound-array", you would simply subtract the differences to \
 see where blocks meet water, and therefore you have the total volume.\
 The above worked, but it was way too slow. Refactored code so it runs faster.\
+
+### 20 Valid Parenthesis
+Straightforward stack implementation, no clever business.
 
 ### 1404 Number of Steps to Reduce Binary Number to 1
 Adding binary was easier converting it to an integer and reversing.\
