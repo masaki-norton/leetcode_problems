@@ -22,6 +22,7 @@ The problems are following the outline provided by https://neetcode.io/roadmap
 ### Stack
 - 20 Valid Parenthesis
 - 155 Min Stack
+- 150 Evaluate RPN
 
 ### Other
 - 1404 Number of Steps to Reduce Binary Number to 1
@@ -127,6 +128,9 @@ Straightforward stack implementation, no clever business.
 ### 155 Min Stack
 Note that the class needs to retrieve min value of stack in O(1) time.\
 Keep a second stack, updating the min values as elements move through the stack.
+
+### 150 Evaluate RPM
+Straight forward again, but just note that using int() will always tend towards zero.
 
 ### 1404 Number of Steps to Reduce Binary Number to 1
 Adding binary was easier converting it to an integer and reversing.\
