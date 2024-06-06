@@ -3,6 +3,13 @@ https://leetcode.com/problems/daily-temperatures/description/
 """
 
 def dailyTemps(temps: list[int]) -> list[int]:
+    stack = []
+    output = []
+    for t in temps:
+        if len(stack) == 0:
+            stack.append(t)
+        elif t < stack[-1]:
+            stack.append(t)
     return
 
 # test cases
