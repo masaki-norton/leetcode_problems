@@ -24,6 +24,7 @@ The problems are following the outline provided by https://neetcode.io/roadmap
 - 155 Min Stack
 - 150 Evaluate RPN
 - 22 Generate Parentheses
+- 739 Daily Temperatures
 
 ### Other
 - 1404 Number of Steps to Reduce Binary Number to 1
@@ -138,6 +139,9 @@ Use recursion and a stack.\
 Important differences here is that we use stack.pop _after_ each recursion call\
 to "revert" the stack back to its original form. This prevents having to pass the\
 stack to the actual recursion.
+
+### 739 Daily Temperatures
+
 
 ### 1404 Number of Steps to Reduce Binary Number to 1
 Adding binary was easier converting it to an integer and reversing.\
