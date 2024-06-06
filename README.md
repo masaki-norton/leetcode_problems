@@ -23,6 +23,7 @@ The problems are following the outline provided by https://neetcode.io/roadmap
 - 20 Valid Parenthesis
 - 155 Min Stack
 - 150 Evaluate RPN
+- 22 Generate Parentheses
 
 ### Other
 - 1404 Number of Steps to Reduce Binary Number to 1
@@ -131,6 +132,12 @@ Keep a second stack, updating the min values as elements move through the stack.
 
 ### 150 Evaluate RPM
 Straight forward again, but just note that using int() will always tend towards zero.
+
+### 22 Generate Parentheses
+Use recursion and a stack.\
+Important differences here is that we use stack.pop _after_ each recursion call\
+to "revert" the stack back to its original form. This prevents having to pass the\
+stack to the actual recursion.
 
 ### 1404 Number of Steps to Reduce Binary Number to 1
 Adding binary was easier converting it to an integer and reversing.\
