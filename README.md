@@ -149,7 +149,12 @@ eliminate all cases like 71, 69,  74, 70, where although 70 is smaller than \
 care of it.
 
 ### 853 Car Fleet
-
+This problem is a complicated way of comparing starting positions and ETAs.\
+Given sorted starting positions from furthest away to the target, the only way\
+a car "catches up" is if eta[i] is less than eta[i-1], if eta is a monotonically\
+increasing stack. If the car catches up (stack[-1] <= eta), pop it off the stack.\
+Repeat that process for all cars, and the length of the ETA stack is the number\
+of fleets.
 
 ### 1404 Number of Steps to Reduce Binary Number to 1
 Adding binary was easier converting it to an integer and reversing.\
