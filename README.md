@@ -141,7 +141,11 @@ to "revert" the stack back to its original form. This prevents having to pass th
 stack to the actual recursion.
 
 ### 739 Daily Temperatures
-
+Use a stack of indices. This stack stores in only decreasing order, since \
+we compare only against the top element. By making the stack decreasing, we can\
+eliminate all cases like 71, 69,  74, 70, where although 70 is smaller than \
+74, it is bigger than 69. But 69 won't be in the stack, since 74 already took\
+care of it.
 
 ### 1404 Number of Steps to Reduce Binary Number to 1
 Adding binary was easier converting it to an integer and reversing.\

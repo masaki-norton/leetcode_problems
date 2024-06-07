@@ -4,13 +4,14 @@ https://leetcode.com/problems/daily-temperatures/description/
 
 def dailyTemps(temps: list[int]) -> list[int]:
     stack = []
-    output = []
-    for t in temps:
-        if len(stack) == 0:
-            stack.append(t)
-        elif t < stack[-1]:
-            stack.append(t)
-    return
+    output = [0] * len(temps)
+    for i, t in enumerate(temps):
+        while stack and temps[stack[-1]] < t:
+            x = stack.pop()
+            output[x] = i - x
+
+        stack.append(i)
+    return output
 
 # test cases
 temperatures1 = [73,74,75,71,69,72,76,73]   # [1,1,4,2,1,1,0,0]
