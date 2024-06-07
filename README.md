@@ -25,6 +25,7 @@ The problems are following the outline provided by https://neetcode.io/roadmap
 - 150 Evaluate RPN
 - 22 Generate Parentheses
 - 739 Daily Temperatures
+- 853 Car Fleet
 
 ### Other
 - 1404 Number of Steps to Reduce Binary Number to 1
@@ -146,6 +147,9 @@ we compare only against the top element. By making the stack decreasing, we can\
 eliminate all cases like 71, 69,  74, 70, where although 70 is smaller than \
 74, it is bigger than 69. But 69 won't be in the stack, since 74 already took\
 care of it.
+
+### 853 Car Fleet
+
 
 ### 1404 Number of Steps to Reduce Binary Number to 1
 Adding binary was easier converting it to an integer and reversing.\
