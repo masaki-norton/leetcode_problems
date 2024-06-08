@@ -3,21 +3,18 @@ https://leetcode.com/problems/largest-rectangle-in-histogram/description/
 '''
 
 def largestRectangleArea(heights: list[int]) -> int:
-    # print(f"{heights = }")
     stack = []
     max_height = 0
     for i, h in enumerate(heights):
         while stack and heights[stack[-1]] > h:
             popped = stack.pop()
+             # be careful choosing boundries of our rectangle here
             max_height = max(max_height, heights[popped] * (i - (stack[-1] + 1) if stack else i))
         stack.append(i)
-
-    # print(f"pre-dump {stack = }")
     while stack:
         popped = stack.pop()
+        # be careful choosing boundries of our rectangle here
         max_height = max(max_height, heights[popped] * (len(heights) - (stack[-1] + 1) if stack else len(heights)))
-        # print(f"new {stack = }")
-        # print(f"new {max_height = }")
     return max_height
 
 # test cases

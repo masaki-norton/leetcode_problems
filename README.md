@@ -174,7 +174,13 @@ side is the next index in the stack + 1, since all the indicies _above_ the next
 item down the stack are guaranteed to have at least the popped height (or else it\
 would not have been added to the stack). With that, track and calculate max area\
 as we move across the entire heights list.\
-The second part to this problem is
+
+The second part to this problem is after we traverse the list, we can be left with \
+a non-empty stack (this always happens if the last value != min(heights)). We need\
+to cover potential rectangles created by the remaining elements in the stack.\
+Similar to the above (but slightly different algo) to check heights possible with \
+each index item. Key point is to consider carefully what we can assume about the boundaries\
+of the rectangle created at our current bar's height.
 
 ### 1404 Number of Steps to Reduce Binary Number to 1
 Adding binary was easier converting it to an integer and reversing.\
