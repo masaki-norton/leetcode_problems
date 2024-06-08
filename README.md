@@ -29,6 +29,8 @@ The problems are following the outline provided by https://neetcode.io/roadmap
 - 84 Largest Rectangle in Histogram
 
 ### Binary Search
+- 704 Binary Search
+- 74 Search 2D Matrix
 
 ### Other
 - 1404 Number of Steps to Reduce Binary Number to 1
@@ -183,6 +185,13 @@ to cover potential rectangles created by the remaining elements in the stack.\
 Similar to the above (but slightly different algo) to check heights possible with \
 each index item. Key point is to consider carefully what we can assume about the boundaries\
 of the rectangle created at our current bar's height.
+
+### 704 Binary Search
+Straightforward binary search. Alwayas be careful about the exit clause in the \
+while loop, such that it will not break when l, m, r are close to eachother.
+
+### 74 Search 2D Matrix
+
 
 ### 1404 Number of Steps to Reduce Binary Number to 1
 Adding binary was easier converting it to an integer and reversing.\

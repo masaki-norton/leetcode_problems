@@ -9,7 +9,7 @@ def search(nums: list[int], target:int) -> int:
     while l < r:
         if nums[m] == target:
             return m
-        elif nums[m] < target:
+        elif nums[m] <= target:
             l = m + 1
             m = (r + l) // 2
         else:
