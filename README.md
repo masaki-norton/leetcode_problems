@@ -28,6 +28,8 @@ The problems are following the outline provided by https://neetcode.io/roadmap
 - 853 Car Fleet
 - 84 Largest Rectangle in Histogram
 
+### Binary Search
+
 ### Other
 - 1404 Number of Steps to Reduce Binary Number to 1
 
