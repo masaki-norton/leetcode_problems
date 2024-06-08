@@ -26,6 +26,7 @@ The problems are following the outline provided by https://neetcode.io/roadmap
 - 22 Generate Parentheses
 - 739 Daily Temperatures
 - 853 Car Fleet
+- 84 Largest Rectangle in Histogram
 
 ### Other
 - 1404 Number of Steps to Reduce Binary Number to 1
@@ -104,7 +105,9 @@ The key was to recognize under which exact step would you want to perform the \
 
 ### 11 Container With Most Water
 Go from outside inwards. Logic here is that, in any given position, if the next \
-bar is lower, it will hold less water. Start with two pointers, left and right.\
+bar is lower, it will hold less water (technically, the delta required for the \
+height to next bar is anything greter than the width decrease by moving inward). \
+Start with two pointers, left and right.\
 Go inwards calculating area as necessary. Move inwards depending on which next \
 bar is taller, and keep skipping over shorter next bars using while loops for \
 a fast solution.
@@ -155,6 +158,23 @@ a car "catches up" is if eta[i] is less than eta[i-1], if eta is a monotonically
 increasing stack. If the car catches up (stack[-1] <= eta), pop it off the stack.\
 Repeat that process for all cars, and the length of the ETA stack is the number\
 of fleets.
+
+### 84 Largest Rectangle in Histogram
+This is a two-part problem using a monotonically increasing stack.\
+In the first part, when moving from left to right, we should check for a rectangle\
+if the current number is smaller than the previous number, generally. To put it another\
+way, calculating the rectangle for any given height is pointless if the next bar\
+is higher, since it will always yield a larger rectangle. Therefore, we can eliminate\
+those useless calculations by only calculating rectangles when we find that a number\
+decreased as we move left to right. We create a stack, and pop items if they are\
+larger than our current number. A few things we can say about the rectangle created\
+by that popped number: 1) the rectangle's right side is always our current index - 1,\
+since all elements to the right are highher than the popped index, and 2) the left \
+side is the next index in the stack + 1, since all the indicies _above_ the next\
+item down the stack are guaranteed to have at least the popped height (or else it\
+would not have been added to the stack). With that, track and calculate max area\
+as we move across the entire heights list.\
+The second part to this problem is
 
 ### 1404 Number of Steps to Reduce Binary Number to 1
 Adding binary was easier converting it to an integer and reversing.\
