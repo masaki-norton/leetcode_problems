@@ -31,6 +31,8 @@ The problems are following the outline provided by https://neetcode.io/roadmap
 ### Binary Search
 - 704 Binary Search
 - 74 Search 2D Matrix
+- 875 Koko Eating Bananas
+- 153 Search Minimum in Sorted Array
 
 ### Other
 - 1404 Number of Steps to Reduce Binary Number to 1
@@ -191,7 +193,24 @@ Straightforward binary search. Alwayas be careful about the exit clause in the \
 while loop, such that it will not break when l, m, r are close to eachother.
 
 ### 74 Search 2D Matrix
+Two set of binary searches. First searches which array should be looked at,\
+and the second searches if the target is in that array. Again, with any binary\
+search, its important to know what the while loop escape mechanism is, and what\
+exactly l,m,r would be when that loop exits.
 
+### 875 Koko Eating Bananas
+The search space is between 1 and the largest pile in the piles. Use a helper
+method to determine if the eaating speed is quick enough, and throw out half
+the search space accordingly. Note that, because an "equal" amount is acceptable,
+i.e., if the bananaks are eaten as the guard arrives, this is considered possible,
+our return case is >= instead of > in the helper method, and our loop runs from
+l <= r not l < r. This puts us at the solutin where the helper method returns false,
+so we return m + 1 for a guaranteed success.
+
+### 153 Search Minimum in Sorted Array
+Binary search is all about shrinking the search space by half the space at a time.
+This problem is centered around sructuring the if else statements such that the
+correct side of data is thrown out.
 
 ### 1404 Number of Steps to Reduce Binary Number to 1
 Adding binary was easier converting it to an integer and reversing.\

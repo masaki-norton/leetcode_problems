@@ -3,26 +3,19 @@ https://leetcode.com/problems/koko-eating-bananas/description/
 '''
 
 def minEatingSpeed(piles: list[int], h: int) -> int:
-    if len(piles) == 1:
-        return -(piles[0] // -h)
+    def can_eat(x):
+        return h >= sum([-(p // -x) for p in piles])
 
     l, r = 1, max(piles)
-    m = (l + r) // 2 + 1
+    m = (l + r) // 2
 
-    while l < r:
-        total_time = sum([-(p // -m) for p in piles])
-        if total_time < h:
+    while l <= r:
+        if can_eat(m):
             r = m - 1
             m = (l + r) // 2
-        elif total_time > h:
+        else:
             l = m + 1
             m = (l + r) // 2
-        else:
-            break
-
-    while m >= 1 and sum([-(p // -m) for p in piles]) <= h:
-        m -= 1
-
     return m + 1
 
 # test cases
