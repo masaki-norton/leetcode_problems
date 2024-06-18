@@ -33,6 +33,8 @@ The problems are following the outline provided by https://neetcode.io/roadmap
 - 74 Search 2D Matrix
 - 875 Koko Eating Bananas
 - 153 Search Minimum in Sorted Array
+- 981 Time Based Key-Value Store
+- 4 Median of Two Sorted Arrays
 
 ### Other
 - 1404 Number of Steps to Reduce Binary Number to 1
@@ -211,6 +213,16 @@ so we return m + 1 for a guaranteed success.
 Binary search is all about shrinking the search space by half the space at a time.
 This problem is centered around sructuring the if else statements such that the
 correct side of data is thrown out.
+
+### 981 Time Based Key-Value Store
+Fairly straight forward brute force solve.
+Be sure to store data in the class such that you are not recalculating everything.
+
+### 4 Median of Two Sorted Arrays
+Requires figuring out the correct partition of the two arrays which result in the
+left half of the combined array. So, use binary search on one of the arrays to
+find where the best partition spot is, such that the resulting left-half array
+is properly sorted (and median can be extrapolated from there).
 
 ### 1404 Number of Steps to Reduce Binary Number to 1
 Adding binary was easier converting it to an integer and reversing.\
