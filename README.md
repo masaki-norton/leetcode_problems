@@ -224,6 +224,9 @@ left half of the combined array. So, use binary search on one of the arrays to
 find where the best partition spot is, such that the resulting left-half array
 is properly sorted (and median can be extrapolated from there).
 
+The problem is basically asking to find the first half of combining two sorted
+arrays. The median calculation is just a trivial step beyond that.
+
 ### 1404 Number of Steps to Reduce Binary Number to 1
 Adding binary was easier converting it to an integer and reversing.\
 Dividing by 2 in binary is simply shifting all digits over by 1, or \
