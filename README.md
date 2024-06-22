@@ -36,6 +36,9 @@ The problems are following the outline provided by https://neetcode.io/roadmap
 - 981 Time Based Key-Value Store
 - 4 Median of Two Sorted Arrays
 
+### Sliding Window
+- 121 Best Time to Buy/Sell Stocks
+
 ### Other
 - 1404 Number of Steps to Reduce Binary Number to 1
 
@@ -226,6 +229,9 @@ is properly sorted (and median can be extrapolated from there).
 
 The problem is basically asking to find the first half of combining two sorted
 arrays. The median calculation is just a trivial step beyond that.
+
+### 121 Best Time to Buy/Sell Stocks
+
 
 ### 1404 Number of Steps to Reduce Binary Number to 1
 Adding binary was easier converting it to an integer and reversing.\
