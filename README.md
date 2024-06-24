@@ -38,6 +38,7 @@ The problems are following the outline provided by https://neetcode.io/roadmap
 
 ### Sliding Window
 - 121 Best Time to Buy/Sell Stocks
+- 3 Longest Substring Without Repeating Characters
 
 ### Other
 - 1404 Number of Steps to Reduce Binary Number to 1
@@ -231,6 +232,11 @@ The problem is basically asking to find the first half of combining two sorted
 arrays. The median calculation is just a trivial step beyond that.
 
 ### 121 Best Time to Buy/Sell Stocks
+Two pointers more than sliding window. One pass, adjust lowest price if the current
+"buy price" is bigger than current index number. For each item in the index, check
+the delta against max price and adjust max profit accordingly.
+
+### 4 Longest Substring Without Repeating Characters
 
 
 ### 1404 Number of Steps to Reduce Binary Number to 1
