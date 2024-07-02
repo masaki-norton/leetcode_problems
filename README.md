@@ -237,7 +237,7 @@ Two pointers more than sliding window. One pass, adjust lowest price if the curr
 the delta against max price and adjust max profit accordingly.
 
 ### 4 Longest Substring Without Repeating Characters
-
+Keep a log of seen characters and do a single pass using a while loop. Using set() instead of a list [] cuts the runtime dramatically (~50%).
 
 ### 1404 Number of Steps to Reduce Binary Number to 1
 Adding binary was easier converting it to an integer and reversing.\
