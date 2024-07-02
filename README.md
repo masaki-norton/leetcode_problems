@@ -39,10 +39,10 @@ The problems are following the outline provided by https://neetcode.io/roadmap
 ### Sliding Window
 - 121 Best Time to Buy/Sell Stocks
 - 3 Longest Substring Without Repeating Characters
+- 424 Longest Repeating Character Replacement
 
 ### Other
 - 1404 Number of Steps to Reduce Binary Number to 1
-
 
 ## Explanations and Key Points
 ### 217 Contains Duplicate
@@ -238,6 +238,12 @@ the delta against max price and adjust max profit accordingly.
 
 ### 4 Longest Substring Without Repeating Characters
 Keep a log of seen characters and do a single pass using a while loop. Using set() instead of a list [] cuts the runtime dramatically (~50%).
+
+### 424 Longest Repeating Character Replacement
+Straight forward left and right pointers, moving right to expand and shifting the
+left pointer when the conditions are not met. In this case, use a char counter
+array that indicates character count. If the max number vs sum of all nums in the
+char count differ greater than k, the substring is invalid.
 
 ### 1404 Number of Steps to Reduce Binary Number to 1
 Adding binary was easier converting it to an integer and reversing.\
