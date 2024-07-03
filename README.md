@@ -40,6 +40,7 @@ The problems are following the outline provided by https://neetcode.io/roadmap
 - 121 Best Time to Buy/Sell Stocks
 - 3 Longest Substring Without Repeating Characters
 - 424 Longest Repeating Character Replacement
+- 567 Permutation in String
 
 ### Other
 - 1404 Number of Steps to Reduce Binary Number to 1
@@ -244,6 +245,12 @@ Straight forward left and right pointers, moving right to expand and shifting th
 left pointer when the conditions are not met. In this case, use a char counter
 array that indicates character count. If the max number vs sum of all nums in the
 char count differ greater than k, the substring is invalid.
+
+### 567 Permutation in String
+Keep track of two lists (word counts) and just compare these at each iteration.
+A faster method exists where you can simply track the differences that each
+sliding window will incur, but this involves many if-statements and messy code.
+Current solution beats approx 90% in both runtime and memory.
 
 ### 1404 Number of Steps to Reduce Binary Number to 1
 Adding binary was easier converting it to an integer and reversing.\
