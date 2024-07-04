@@ -41,6 +41,7 @@ The problems are following the outline provided by https://neetcode.io/roadmap
 - 3 Longest Substring Without Repeating Characters
 - 424 Longest Repeating Character Replacement
 - 567 Permutation in String
+- 76 Minimum Window Substring
 
 ### Other
 - 1404 Number of Steps to Reduce Binary Number to 1
@@ -251,6 +252,13 @@ Keep track of two lists (word counts) and just compare these at each iteration.
 A faster method exists where you can simply track the differences that each
 sliding window will incur, but this involves many if-statements and messy code.
 Current solution beats approx 90% in both runtime and memory.
+
+### 76 Minimum Window Substring
+Use hash maps to compare the character count, but when comparing them, make sure
+to not compare the entire hash map and only the characters that got adjusted.
+The comparison of maps can be done by comparing the counts, and only compare
+the updated counts on the hash map (this avoids repeated comparisons of items
+within the hashmap that do not be to be compared).
 
 ### 1404 Number of Steps to Reduce Binary Number to 1
 Adding binary was easier converting it to an integer and reversing.\
